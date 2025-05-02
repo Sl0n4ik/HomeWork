@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Spin : MonoBehaviour
+public class Spiner : MonoBehaviour
 {
     [SerializeField] private float _spenSpeed = 12f;
-    void Update()
+    
+    private void Update()
     {
         transform.Rotate(Vector3.up, _spenSpeed * Time.deltaTime);
     }
